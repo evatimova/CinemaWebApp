@@ -1,0 +1,71 @@
+﻿@model List<CinemaWeb.Domain.DomainModels.Ticket>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="m-3">
+        <a class="btn btn-secondary" asp-controller="Tickets" asp-action="Create">Add New Movie</a>
+    </div>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <form asp-controller="Tickets" asp-action="ExportTicketsByGenre" method="post">
+            <div class="row m-3">
+                <div class="col-6">
+                    <input type="text" class="form-control" id="genre" name="genre">
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn btn-info">
+                        Export Tickets by Genre
+                    </button>
+                </div>
+            </div>
+        </form>
+    }
+
+    <form asp-controller="Tickets" asp-action="FilterByDate" method="get">
+        <button type="submit" class="btn btn-outline-info">
+            Filter by valid date
+        </button>
+    </form>
+    <br />
+
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        var item = Model[i];
+
+        if (i % 3 == 0)
+        {
+            @:<div class="row">
+            }
+
+            <div class="card" style="width: 20rem; height: 30rem;">
+                <img class="card-img-top" src="@item.FilmImage" style="height: 50%" alt="Image for Film" />
+
+                <div class="card-body">
+                    <h3 class="card-title">@item.FilmName</h3>
+                    <p class="card-text">@item.FilmTime</p>
+                    <p class="card-text">Rating: @item.Rating</p>
+
+                    <h6>Price: @item.FilmPrice den</h6>
+                </div>
+
+                <div class="card-footer">
+                    <a asp-controller="Tickets" asp-action="AddTicketToCard" asp-route-id="@item.Id" class="btn btn-info">Add to Card</a>
+                    <a asp-controller="Tickets" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-secondary">Edit</a>
+                </div>
+
+            </div>
+
+            if (i % 3 == 2)
+            {
+            @:</div>
+        }
+    }
+
+</div>
+
+

@@ -1,0 +1,12 @@
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\bin\Debug\netcoreapp3.1\CinemaWeb.Repository.deps.json
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\bin\Debug\netcoreapp3.1\CinemaWeb.Repository.dll
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\bin\Debug\netcoreapp3.1\CinemaWeb.Repository.pdb
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\bin\Debug\netcoreapp3.1\CinemaWeb.Domain.dll
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\bin\Debug\netcoreapp3.1\CinemaWeb.Domain.pdb
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\obj\Debug\netcoreapp3.1\CinemaWeb.Repository.csproj.AssemblyReference.cache
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\obj\Debug\netcoreapp3.1\CinemaWeb.Repository.AssemblyInfoInputs.cache
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\obj\Debug\netcoreapp3.1\CinemaWeb.Repository.AssemblyInfo.cs
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\obj\Debug\netcoreapp3.1\CinemaWeb.Repository.csproj.CoreCompileInputs.cache
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\obj\Debug\netcoreapp3.1\CinemaWeb.Repository.csproj.CopyComplete
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\obj\Debug\netcoreapp3.1\CinemaWeb.Repository.dll
+C:\Users\evati\source\repos\CinemaWebApplication\CinemaWeb.Repository\obj\Debug\netcoreapp3.1\CinemaWeb.Repository.pdb
